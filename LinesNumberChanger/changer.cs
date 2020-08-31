@@ -45,4 +45,5 @@ namespace LinesNumberChanger
             box.Text = string.Join("\n", newLines.ToArray());
         }
     }
+
 }
