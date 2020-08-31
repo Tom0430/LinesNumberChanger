@@ -1,0 +1,10 @@
+C:\Users\ttaka\OneDrive\デスクトップ\practice\LinesNumberChanger\LinesNumberChanger\bin\Debug\LinesNumberChanger.exe.config
+C:\Users\ttaka\OneDrive\デスクトップ\practice\LinesNumberChanger\LinesNumberChanger\bin\Debug\LinesNumberChanger.exe
+C:\Users\ttaka\OneDrive\デスクトップ\practice\LinesNumberChanger\LinesNumberChanger\bin\Debug\LinesNumberChanger.pdb
+C:\Users\ttaka\OneDrive\デスクトップ\practice\LinesNumberChanger\LinesNumberChanger\obj\Debug\LinesNumberChanger.csprojAssemblyReference.cache
+C:\Users\ttaka\OneDrive\デスクトップ\practice\LinesNumberChanger\LinesNumberChanger\obj\Debug\LinesNumberChanger.Form1.resources
+C:\Users\ttaka\OneDrive\デスクトップ\practice\LinesNumberChanger\LinesNumberChanger\obj\Debug\LinesNumberChanger.Properties.Resources.resources
+C:\Users\ttaka\OneDrive\デスクトップ\practice\LinesNumberChanger\LinesNumberChanger\obj\Debug\LinesNumberChanger.csproj.GenerateResource.cache
+C:\Users\ttaka\OneDrive\デスクトップ\practice\LinesNumberChanger\LinesNumberChanger\obj\Debug\LinesNumberChanger.csproj.CoreCompileInputs.cache
+C:\Users\ttaka\OneDrive\デスクトップ\practice\LinesNumberChanger\LinesNumberChanger\obj\Debug\LinesNumberChanger.exe
+C:\Users\ttaka\OneDrive\デスクトップ\practice\LinesNumberChanger\LinesNumberChanger\obj\Debug\LinesNumberChanger.pdb
