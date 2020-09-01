@@ -7,4 +7,3 @@ C:\Users\ttaka\OneDrive\デスクトップ\practice\LinesNumberChanger\LinesNumb
 C:\Users\ttaka\OneDrive\デスクトップ\practice\LinesNumberChanger\LinesNumberChanger\obj\Release\LinesNumberChanger.csproj.CoreCompileInputs.cache
 C:\Users\ttaka\OneDrive\デスクトップ\practice\LinesNumberChanger\LinesNumberChanger\obj\Release\LinesNumberChanger.exe
 C:\Users\ttaka\OneDrive\デスクトップ\practice\LinesNumberChanger\LinesNumberChanger\obj\Release\LinesNumberChanger.pdb
-C:\Users\ttaka\OneDrive\デスクトップ\practice\LinesNumberChanger\LinesNumberChanger\obj\Release\LinesNumberChanger.csprojAssemblyReference.cache

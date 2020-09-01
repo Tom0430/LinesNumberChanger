@@ -20,12 +20,17 @@ namespace LinesNumberChanger
 
         private void buttonCountUp_Click(object sender, EventArgs e)
         {
-            Changer.changeLinesNum(richTextBox1, 1);
+            Changer.ChangeLinesNum(richTextBox1, 1);
         }
             
         private void buttonCountDown_Click(object sender, EventArgs e)
         {
-            Changer.changeLinesNum(richTextBox1, -1);
+            Changer.ChangeLinesNum(richTextBox1, -1);
+        }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
