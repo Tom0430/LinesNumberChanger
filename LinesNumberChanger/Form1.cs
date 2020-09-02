@@ -27,10 +27,5 @@ namespace LinesNumberChanger
         {
             Changer.ChangeLinesNum(richTextBox1, -1);
         }
-
-        private void richTextBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

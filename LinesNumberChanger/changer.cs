@@ -17,6 +17,7 @@ namespace LinesNumberChanger
                 return;
             }
 
+            box.Text = (Regex.Replace(box.Text, @"　", " "));
             var pattern = @"^\d+";
             var rx = new Regex(pattern, RegexOptions.Compiled | RegexOptions.IgnoreCase);
 
