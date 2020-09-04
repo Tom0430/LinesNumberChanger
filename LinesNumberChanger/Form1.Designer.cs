@@ -28,10 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.buttonCountUp = new System.Windows.Forms.Button();
             this.buttonCountDown = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.buttonOutput = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // richTextBox1
@@ -74,15 +76,27 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "下に文字をコピペしてちょ";
             // 
+            // buttonOutput
+            // 
+            this.buttonOutput.Location = new System.Drawing.Point(1337, 691);
+            this.buttonOutput.Name = "buttonOutput";
+            this.buttonOutput.Size = new System.Drawing.Size(167, 37);
+            this.buttonOutput.TabIndex = 5;
+            this.buttonOutput.Text = "ファイルに出力";
+            this.buttonOutput.UseVisualStyleBackColor = true;
+            this.buttonOutput.Click += new System.EventHandler(this.buttonOutput_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1527, 757);
+            this.Controls.Add(this.buttonOutput);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonCountDown);
             this.Controls.Add(this.buttonCountUp);
             this.Controls.Add(this.richTextBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "行番号変換装置";
             this.ResumeLayout(false);
@@ -96,6 +110,7 @@
         private System.Windows.Forms.Button buttonCountUp;
         private System.Windows.Forms.Button buttonCountDown;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button buttonOutput;
     }
 }
 
