@@ -44,15 +44,12 @@ namespace LinesNumberChanger
             //}
             //Form.ShowDialog( );
 
-            Form2 f2 = new Form2();
-            //Clickイベントハンドラを追加
-            //f2.Click += new EventHandler(f2_Click);
-
+            Form2 f2 = new Form2(richTextBox1.Text);
             f2.ShowDialog();
-
-
-            //終了時にメッセージボックスを表示
-            MessageBox.Show("Application End");
+            MessageBox.Show("ファイルが作成されました",
+                                "ファイル作成完了",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Information);
         }
     }
 }

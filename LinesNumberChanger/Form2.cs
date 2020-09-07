@@ -13,9 +13,12 @@ namespace LinesNumberChanger
 {
     public partial class Form2 : Form
     {
-        public Form2()
+        private string inputText;
+
+        public Form2(string text)
         {
             InitializeComponent();
+            inputText = text;
         }
 
         private void Form2_Load(object sender, EventArgs e)
@@ -37,33 +40,39 @@ namespace LinesNumberChanger
         {
             string fileName = maskedTextBox1.Text;
             string path = label2.Text;
-            string FullPath = path + @"\" + fileName;
+            string fullPath = path + @"\" + fileName;
+            string[] lines = inputText.Split(new[] { "\r\n", "\r", "\n" }, StringSplitOptions.None);
 
-            if(fileName == "")
+            if (fileName == "")
             {
                 label1.ForeColor = Color.Red;
             }
 
-            if(path == "")
+            if (path == "")
             {
                 label2.Text = "選択してください";
                 label2.ForeColor = Color.Red;
                 return;
             }
 
-            if (File.Exists(FullPath))
+            if (File.Exists(fullPath))
             {
-
+                MessageBox.Show($"同名のファイルが存在します。" +
+                                "ファイル名を変更するか、" +
+                                "出力先を変更してください",
+                                "エラー",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Error);
             }
             else
             {
-                MessageBox.Show($"同名のファイルが存在します。" +
-                                 "ファイル名を変更するか、" +
-                                 "出力先を変更してください",
-    "エラー",
-    MessageBoxButtons.OK,
-    MessageBoxIcon.Error);
-                
+                FileStream fs = File.Create(fullPath);
+                using (var writer = new StreamWriter(fs))
+                {
+                    foreach (var line in lines)
+                        writer.WriteLine(line);
+                }
+                this.Close();
             }
 
         }
