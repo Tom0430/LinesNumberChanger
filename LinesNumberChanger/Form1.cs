@@ -31,19 +31,6 @@ namespace LinesNumberChanger
 
         private void buttonOutput_Click(object sender, EventArgs e)
         {
-            //var filePath = @"C:\Users\ttaka\OneDrive\デスクトップ\test.txt";
-            //string[] lines = richTextBox1.Text.Split(new[] { "\r\n", "\r", "\n" }, StringSplitOptions.None);
-
-            //if (File.Exists(filePath))
-            //{
-            //    File.WriteAllLines(filePath, lines);
-            //}
-            //else
-            //{
-
-            //}
-            //Form.ShowDialog( );
-
             Form2 f2 = new Form2(richTextBox1.Text);
             f2.ShowDialog();
             MessageBox.Show("ファイルが作成されました",

@@ -26,11 +26,7 @@ namespace LinesNumberChanger
 
             foreach (var line in lines)
             {
-                if (String.IsNullOrEmpty(line))
-                {
-                    newLines.Add(line);
-                }
-                else if (rx.Match(line).Value == "")
+                if (String.IsNullOrEmpty(line) || rx.Match(line).Value == "")
                 {
                     newLines.Add(line);
                 }
@@ -38,9 +34,15 @@ namespace LinesNumberChanger
                 {
                     string numHalfOnly= NumStr_FullToHalf(line);
                     int lineNum = int.Parse(rx.Match(numHalfOnly).Value);
-                    string AddedLineNum = (lineNum + changeNum).ToString();
-                    string result = Regex.Replace(line, @"^\d+", AddedLineNum);
-                    newLines.Add(result);
+                    int AddedLineNum = (lineNum + changeNum);
+
+                    if(AddedLineNum < 0)
+                    {
+                        AddedLineNum = 0;
+                    }
+
+                    string fixedLine = Regex.Replace(line, @"^\d+", AddedLineNum.ToString());
+                    newLines.Add(fixedLine);
                 }
             }
             box.Text = string.Join("\n", newLines.ToArray());
